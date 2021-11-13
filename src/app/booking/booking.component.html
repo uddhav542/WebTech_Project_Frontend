@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safar</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="banner-area">
+
+        
+
+        <div class="title-area">
+            <p class="subtitle">BOOK  <br>
+                    YOUR <br>
+                    FLIGHT WITH US
+            </p> 
+        </div>
+        <!--<div class="image">
+            <img id="map" src="../Images/85.png">
+        </div>-->
+        
+        <div class=booking>
+            <div id="booking-form-box">
+                <div id="subtitle-area"><p id="textarea">Book your Flight</p>
+                </div><br><br><br>
+                
+            
+                        <form routerLink='/flights' method="post">
+                            <div class="row">
+                                <div class="c2">
+                                    <input type="text" name="start" placeholder="Enter Start" id="input-box"> 
+                                </div>
+                                <div class="c2">
+                                    <input type="text" name="Dest" placeholder="Enter End" id="input-box1">
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="c2">
+                                    <input type="date" name="date" placeholder="Departure Date" id="input-box">
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="c2">
+                                    <select name="category" aria-placeholder="Traveller&Class" id="input-box">
+                                        <option value="" disabled selected hidden>Class</option>
+                                        <option value="First">Business</option>
+                                        <option value="Elite">Elite</option>
+                                    </select>
+                                </div>
+                                <div class="c2">
+                                    <input id="input-box1" type="submit" name="Search" value="Search"/>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

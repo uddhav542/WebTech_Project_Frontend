@@ -1,0 +1,308 @@
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .Nav-Bar{
+    color:rgba(48, 8, 8, 0.767);
+  }
+
+  .banner-area {
+    width: 100%;
+    height: 100vh;
+    background:rgb(212, 218, 247);
+    background-image: url(../Images/85.png);
+    float:right;
+    background-size:cover;
+    position: relative;
+    color: rgba(0, 0, 0, 0.822);
+  }
+  
+  .title-area {
+    position: absolute;
+    top: 155px;
+    left: 35px;
+  }
+  
+  .H1-Main {
+    font-size: 85px;
+    letter-spacing: 2px;
+    color: #0e0d0dd5;
+  }
+  
+  .subtitle {
+    font-family: Philosopher-Regular;
+    font-size: 32px;
+    color: #0a0a0ae8;
+  }
+  
+  .logo-area {
+    position: absolute;
+    left: 35px;
+    top: 25px;
+  
+    font-family: Philosopher-Regular;
+    letter-spacing: 20;
+    color: #070707c5;
+  }
+  
+  #L1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  #L2 {
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1.8px;
+  }
+  .Nav-Bar {
+    font-family: Philosopher-Regular;
+    font-size: 30px;
+    color: black;
+  }
+  
+  ul {
+    width: auto;
+    position: absolute;
+    left: 990px;
+    top: 8px;
+    color: black;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 15px 48px;
+    color: black;
+  }
+  
+  a {
+    text-align: center;
+    color: #0f0f0f;
+    font-family: Philosopher-Regular;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .button-explore {
+    position: absolute;
+    top: 450px;
+    left: 134px;
+  }
+  
+  #btn {
+    font-family: Philosopher-Regular;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    height: 45px;
+    width: 220px;
+  }
+  
+  #k2 {
+    font-family: pertibd;
+    font-weight: 700;
+    font-size: 35px;
+    color: #f8f7f7;
+    position: absolute;
+    left: 138px;
+    top: 680px;
+    opacity: 0.5;
+  }
+  
+  .images {
+    position: absolute;
+    top: 200px;
+    left: 765px;
+    height: 540px;
+    width: 700px;
+  }
+  
+  #ladakh {
+    color: #f8f7f7;
+    position: absolute;
+    bottom: 545px;
+    font-size: 28px;
+    font-family: Philosopher-Regular;
+  }
+  
+  .Ladakh {
+    /* background: rgba(255, 255, 255, 0.3); */
+    border-radius: 12px;
+    height: 380px;
+    width: 245px;
+  }
+  
+  #Card-Ladakh {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  #Andaman {
+    color: #f8f7f7;
+    font-size: 22px;
+    font-family: Philosopher-Regular;
+    position: absolute;
+    left: 300px;
+    top: -8px;
+  }
+  
+  .Andaman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    height: 340px;
+    width: 215px;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+  }
+  
+  #Card-Andaman {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  #Jaipur {
+    color: #f8f7f7;
+    font-size: 20px;
+    font-family: Philosopher-Regular;
+    position: absolute;
+    left: 545px;
+    top: 2px;
+  }
+  
+  .Jaipur {
+    border-radius: 12px;
+    height: 320px;
+    width: 195px;
+    position: absolute;
+    left: 545px;
+    top: 30px;
+  }
+  
+  #Card-Jaipur {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .booking {
+    position: absolute;
+    top: 350px;
+    left: 500px;
+  }
+  #booking-form-box{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 600px;
+    
+    font-size: 18px;
+  }
+
+  #subtitle-area {
+    font-family: Philosopher-Regular;
+    font-size: 22px;
+    color:rgb(38, 38, 41);
+    left:300px;
+  }
+  
+  #textarea{
+    text-align: center;
+  }
+ 
+
+.row {
+    
+  margin: 10px auto;
+}
+
+.row div {
+  display: inline-block;
+}
+.row c2{
+  width: 60px;
+}
+
+
+input[type=text], textarea, select {
+  color: rgba(0, 0, 0, 0.89);
+  font-size: 16px;
+}
+
+select {
+  padding: 3px;
+  width: 200px;
+}
+
+.btn {
+  background-color: #ec8a1a; /* Green */
+  border: 1px solid #86f508;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;   
+
+}
+
+.btn:hover {
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+#input-box{
+  border-radius: 7px;
+  height: 50px;
+  text-align: center;
+  font-family: Philosopher-Regular;
+  width: 200px;
+ 
+}
+#input-box1{
+  border-radius: 7px;
+  height: 50px;
+  text-align: center;
+  font-family: Philosopher-Regular;
+  width: 200px;
+ margin-left: 90px;
+}
+#icon-style{
+  align-content: center;
+}
+
+.image{
+  position: fixed;
+  width: 100%;
+  float: right;
+  left:150px;
+  top:10px;
+}
+
+#map{
+  width:1500px;
+  height:350px;
+}

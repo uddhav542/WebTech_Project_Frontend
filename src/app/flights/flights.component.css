@@ -1,0 +1,137 @@
+@font-face {
+    font-family: pertibd;
+    src: url(../Fonts/pertibd.ttf);
+  }
+  @font-face {
+    font-family: Philosopher-Regular;
+    src: url(../Fonts/Philosopher/Philosopher-Regular.ttf);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .Nav-Bar {
+    font-family: Philosopher-Regular;
+    font-size: 30px;
+  }
+  
+  ul {
+    width: auto;
+    position: absolute;
+    left: 990px;
+    top: 8px;
+  }
+  
+  #old {
+    display: inline-block;
+    padding: 15px 48px;
+  
+  }
+  #new{
+    border:1px solid;
+    display: inline-block;
+    padding: 15px 48px;
+    border-radius: 15px;;
+  }
+  
+  a {
+    text-align: center;
+    color: #353333;
+    font-family: Philosopher-Regular;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .banner-area {
+    width: 100%;
+    height: 100vh;
+    background:rgb(212, 218, 247);
+    background-size: cover;
+    position: relative;
+  }
+  #L1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  #L2 {
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1.8px;
+  }
+   
+  .logo-area {
+    position: absolute;
+    left: 35px;
+    top: 25px;
+  
+    font-family: Philosopher-Regular;
+    letter-spacing: 20;
+    color: #1b1b1b;
+  }
+  
+  .title-area {
+    position: absolute;
+    top: 205px;
+    left: 64px;
+  }
+  
+  .H1-Main {
+    font-size: 85px;
+    letter-spacing: 2px;
+    color: #fcfcfc;
+  }
+  
+  .subtitle {
+    font-family: Philosopher-Regular;
+    font-size: 32px;
+    color: #242121;
+    
+  }
+  
+  .container{
+    background:rgb(212, 218, 247);
+    position: absolute;
+    left: 5px;
+    top: 350px;
+   
+  }
+  .row{
+    border-width: 3px;
+  }
+  #data{
+    border-width: 4px;
+  }
+  
+   
+  ul {
+    width: auto;
+    position: absolute;
+    left: 990px;
+    top: 8px;
+  }
+  
+  ol{
+    width: auto;
+    position: absolute;
+    left: 300px;
+    top: 120px;
+  }
+  
+  .image{
+    position:fixed;
+    width: 500px;
+    left: 1200px;;
+    top:200px;
+    height: 500px;
+    background-image: url("../Images/Group2x.png");
+    background-position:center;
+    background-size: cover;
+
+}
+  
+ 
