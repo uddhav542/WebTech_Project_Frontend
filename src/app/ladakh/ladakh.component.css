@@ -147,7 +147,6 @@
     height: 380px;
     object-fit: cover;
     border-radius: 12px;
-    background-image: url("../Images/Card-Jaipur.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -175,7 +174,6 @@
     height: 340px;
     object-fit: cover;
     border-radius: 12px;
-    background-image: url("../Images/Card-Andaman.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -203,7 +201,6 @@
     height: 320px;
     object-fit: cover;
     border-radius: 12px;
-    background-image: url("../Images/Kerala.jpg");
     background-position: center;
     background-size: cover;
   }

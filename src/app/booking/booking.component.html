@@ -20,9 +20,9 @@
                     FLIGHT WITH US
             </p> 
         </div>
-        <!--<div class="image">
-            <img id="map" src="../Images/85.png">
-        </div>-->
+        <div class="image">
+            <img id="map" src="./assets/Images/85.png">
+        </div>
         
         <div class=booking>
             <div id="booking-form-box">
@@ -30,7 +30,7 @@
                 </div><br><br><br>
                 
             
-                        <form routerLink='/flights' method="post">
+                        <form method="post">
                             <div class="row">
                                 <div class="c2">
                                     <input type="text" name="start" placeholder="Enter Start" id="input-box"> 
@@ -41,9 +41,9 @@
                             </div>
                 
                             <div class="row">
-                                <div class="c2">
+                                <!--<div class="c2">
                                     <input type="date" name="date" placeholder="Departure Date" id="input-box">
-                                </div>
+                                </div>-->
                                 
                             </div>
                             <div class="row">
@@ -55,7 +55,7 @@
                                     </select>
                                 </div>
                                 <div class="c2">
-                                    <input id="input-box1" type="submit" name="Search" value="Search"/>
+                                    <input id="input-box1" type="submit" routerLink='/flights' name="Search" value="Search"/>
                                     
                                 </div>
                             </div>

@@ -7,12 +7,11 @@
   .Nav-Bar{
     color:rgba(48, 8, 8, 0.767);
   }
-
+  
   .banner-area {
     width: 100%;
     height: 100vh;
     background:rgb(212, 218, 247);
-    background-image: url(../Images/85.png);
     float:right;
     background-size:cover;
     position: relative;
@@ -21,7 +20,7 @@
   
   .title-area {
     position: absolute;
-    top: 155px;
+    top: 105px;
     left: 35px;
   }
   
@@ -207,7 +206,7 @@
   }
   .booking {
     position: absolute;
-    top: 350px;
+    top: 390px;
     left: 500px;
   }
   #booking-form-box{

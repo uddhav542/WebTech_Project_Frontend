@@ -10,6 +10,7 @@ import { AndamanComponent } from './andaman/andaman.component';
 import { KeralaComponent } from './kerala/kerala.component';
 import { JaipurComponent } from './jaipur/jaipur.component';
 import { FlightsComponent } from './flights/flights.component';
+import { DestinationComponent } from './destination/destination.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FlightsComponent } from './flights/flights.component';
     AndamanComponent,
     KeralaComponent,
     JaipurComponent,
-    FlightsComponent
+    FlightsComponent,
+    DestinationComponent
   ],
   imports: [
     BrowserModule,

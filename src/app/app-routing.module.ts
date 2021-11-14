@@ -7,6 +7,7 @@ import { AndamanComponent } from './andaman/andaman.component';
 import { KeralaComponent } from './kerala/kerala.component';
 import { JaipurComponent } from './jaipur/jaipur.component';
 import { FlightsComponent } from './flights/flights.component';
+import { DestinationComponent } from './destination/destination.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path:'flights',component:FlightsComponent
+  },
+  {
+    path:'destination',component:DestinationComponent
   },
 ];
 
