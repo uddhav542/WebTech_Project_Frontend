@@ -207,11 +207,7 @@
   .booking {
     position: absolute;
     top: 370px;
-    left: 50px;
-    display: flex;
-  }
-  .flights_table{
-    visibility: hidden;
+    left: 500px;
   }
   #booking-form-box{
     border: 1px solid gray;
@@ -247,10 +243,6 @@
   width: 60px;
 }
 
-.col{
-  align-content: center;
-  
-}
 
 input[type=text], textarea, select {
   color: rgba(0, 0, 0, 0.89);
@@ -290,15 +282,6 @@ select {
  
 }
 #input-box1{
-  border-radius: 7px;
-  height: 50px;
-  text-align: center;
-  font-family: Philosopher-Regular;
-  width: 200px;
-  margin-left: 90px; 
-}
-#input-box2{
-  align-content: center;
   border-radius: 7px;
   height: 50px;
   text-align: center;

@@ -6,22 +6,7 @@
     font-family: Philosopher-Regular;
     src: url(../Fonts/Philosopher/Philosopher-Regular.ttf);
   }
-.Nav-Bar {
-    font-family: Philosopher-Regular;
-    font-size: 30px;
-  }
   
-  ul {
-    width: auto;
-    position: absolute;
-    left: 990px;
-    top: 8px;
-  }
-  
-  li {
-    display: inline-block;
-    padding: 15px 48px;
-  }
 
   a {
     text-align: center;
@@ -31,6 +16,7 @@
     text-decoration: none;
   }
   .banner-area {
+   /* top: 80px;  */
     width: 100%;
     height: 100vh;
     background: url(../Images/Kerala.jpg);
@@ -58,29 +44,8 @@
     
   }
   
-  .logo-area {
-    position: absolute;
-    left: 35px;
-    top: 25px;
   
-    font-family: Philosopher-Regular;
-    letter-spacing: 20;
-    color: #f8f7f7;
-  }
   
-  #L1 {
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  
-  #L2 {
-    position: relative;
-    top: 4px;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 1.8px;
-  }
   .button-explore {
     position: absolute;
     top: 450px;

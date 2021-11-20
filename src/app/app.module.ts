@@ -11,22 +11,40 @@ import { KeralaComponent } from './kerala/kerala.component';
 import { JaipurComponent } from './jaipur/jaipur.component';
 import { FlightsComponent } from './flights/flights.component';
 import { DestinationComponent } from './destination/destination.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { LoginComponent } from './login/login.component';
+import { LadakhDestComponent } from './ladakh-dest/ladakh-dest.component';
+import { BookComponent } from './book/book.component';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { AndamanDestComponent } from './andaman-dest/andaman-dest.component';
+import { JaipurDestComponent } from './jaipur-dest/jaipur-dest.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BookingComponent,
     LadakhComponent,
     AndamanComponent,
     KeralaComponent,
     JaipurComponent,
     FlightsComponent,
-    DestinationComponent
+    DestinationComponent,
+    AboutusComponent,
+    ContactusComponent,
+    LoginComponent,
+    LadakhDestComponent,
+    BookComponent,
+    BookingComponent,
+    AndamanDestComponent,
+    JaipurDestComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,13 +67,12 @@
                                 </div>
                             </div>
                         </form> -->
-                        
-                        <form  method="get" onsubmit="event.preventDefault()" >
+                        <form>
                             <div class="row">
                               <div class="col">
                                 <select name="category" aria-placeholder="Traveller&Class" id="input-box">
                                     <option value="" disabled selected hidden>Source</option>
-                                    <option value="Kerala">Kerala</option>
+                                    <option value="kerala">kerala</option>
                                     <option value="Ladakh">Ladakh</option>
                                     <option value="Andaman">Andaman</option>
                                     <option value="Jaipur">Jaipur</option>
@@ -83,7 +81,7 @@
                               <div class="col">
                                 <select name="category" aria-placeholder="Traveller&Class" id="input-box1">
                                     <option value="" disabled selected hidden>Destination</option>
-                                    <option value="Kerala">Kerala</option>
+                                    <option value="kerala">kerala</option>
                                     <option value="Ladakh">Ladakh</option>
                                     <option value="Andaman">Andaman</option>
                                     <option value="Jaipur">Jaipur</option>
@@ -91,91 +89,20 @@
                               </div>
                             </div>
                             <div class="row">
-                                <!-- <div class="col">
+                                <div class="col">
                                     <select name="category" aria-placeholder="Traveller&Class" id="input-box">
                                         <option value="" disabled selected hidden>Class</option>
                                         <option value="First">Business</option>
                                         <option value="Elite">Elite</option>
                                     </select> 
-                                </div> -->
-                                <div class="col-md-9 text-center">
-                                    <input  id="input-box2" (click)="getData()" type="submit" name="Search" value="Search"/>
                                 </div>
-                            </div>
+                                <div class="col">
+                                    <input  id="input-box1" (click)="getData()" type="submit" name="Search" value="Search"/>
+                                </div>
+                              </div>
                           </form>
                 
             </div>
-            <div *ngIf="showMe">
-                <form method="post" onsubmit="event.preventDefault()" >
-                    <table class="table mx-3" border=1>
-                        <thead>
-                            <tr>
-                            <th scope="col">Departure</th>
-                              <th scope="col">Arrival</th>
-                              <th scope="col">Price</th>
-                              <th scope="col">Duration </th>
-                              <th scope="col">AirLine</th>
-                              <th scope="col">Departure Time</th>
-                              <th scope="col">Arrival Time</th>
-                              
-                             
-                              <th></th>
-                            </tr>
-                          </thead>
-                        <!-- <td *ngFor="let s of flights">
-                            
-                            {{s}}
-                            
-                        </td> -->
-                        <tr>
-                            <!-- <input type="text" readonly id="source" name="source"
-                                value={{flights[0]}}
-                            />
-                            <input type="text" readonly  name="source"
-                            value={{flights[0]}}
-                        />
-                        <input type="text" readonly  name="source"
-                        value={{flights[0]}}
-                    />
-                    <input type="text" readonly  name="source"
-                    value={{flights[0]}}
-                />
-                <input type="text" readonly  name="source"
-                value={{flights[0]}}
-            />
-            <input type="text" readonly name="source"
-            value={{flights[0]}}
-        /> -->
-                         <td id="source" name="source">
-                                {{flights[0]}}
-                            </td>
-                            <td>
-                                {{flights[1]}}
-                            </td>
-                            <td>
-                                {{flights[2]}}
-                            </td>
-                            <td>
-                                {{flights[3]}}
-                            </td>
-                            <td>
-                                {{flights[4]}}
-                            </td>
-                            <td>
-                                {{flights[5]}}
-                            </td>
-                                <button class="btn btn-success" (click)="bookFlight()">book</button>
-                            
-                        </tr>
-                        
-                        
-                    </table>
-                </form>
-            
-            </div>
-           
-                
-             
             
         </div>
     </div>
