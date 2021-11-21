@@ -78,7 +78,7 @@ export class BookingComponent implements OnInit {
 
   });
     this.bookFlight(book).subscribe((res) => {
-    //   
+          alert("Your Flight is booked Successfully.");
     //   ///this.resetForm(form);
     //   //this.refreshEmployeeList();
     //  // M.toast({ html: 'Flight Booked successfully', classes: 'rounded' });
