@@ -15,6 +15,7 @@ import { BookingComponent } from './booking/booking.component';
 import { AndamanDestComponent } from './andaman-dest/andaman-dest.component';
 import { JaipurDestComponent } from './jaipur-dest/jaipur-dest.component';
 import { SignupComponent } from './signup/signup.component';
+import { MybookingComponent } from './mybooking/mybooking.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,9 @@ const routes: Routes = [
   },
   {
     path:'signup',component:SignupComponent
+  },
+  {
+    path:'mybookings',component:MybookingComponent
   }
 ];
 

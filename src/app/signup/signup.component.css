@@ -6,15 +6,20 @@
     font-family: Philosopher-Regular;
     src: url(../Fonts/Philosopher/Philosopher-Regular.ttf);
   }
+  body {
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+  }
+  
   
   .Title {
-    font-size: 45px;
+    font-size: 48px;
     font-family: pertibd;
     color: #17183b;
   }
   
   .Title-Container {
-    margin-left: 150px;
+    margin-left: 550px;
     margin-top: 100px;
   }
   
@@ -25,7 +30,7 @@
   }
   
   .signup {
-    margin-left: 150px;
+    margin-left: 550px;
     margin-top: 10px;
     font-family: Philosopher-Regular;
   }
@@ -40,7 +45,7 @@
   
   .login-link {
     font-family: Philosopher-Regular;
-    margin-left: 150px;
+    margin-left: 550px;
     margin-top: 12px;
   }
   

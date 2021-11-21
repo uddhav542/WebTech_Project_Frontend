@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head> 
 <body>  
-
-    <div class="Title-Container">
+    
+      <div class="Title-Container">
 
         <div class="Title">Sign In</div>    
         <div class="subtitle">Welcome Back !! </div>
@@ -16,7 +16,7 @@
 
     </div>
         
-    <form class="signup">
+    <form class="signup" method="POST">
 
         <div class="form-group1">
           <label for="exampleInputEmail1">Email address</label>
@@ -29,13 +29,15 @@
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" (click)="login()" class="btn btn-primary">Submit</button>
 
     </form>
 
       <div class="login-link">
           <p>New here ? <a routerLink='/signup'>Create Account here</a> </p>
       </div>
+    
+    
     
 </body>
 </html>

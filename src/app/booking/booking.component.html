@@ -24,7 +24,7 @@
         
         <div class=booking>
             <div id="booking-form-box">
-                <div id="subtitle-area"><p id="textarea">Book your Flight</p>
+                <div id="subtitle-area"><p id="textarea">Search your Flight</p>
                 </div><br><br><br>
                 
 <!--             
@@ -106,7 +106,8 @@
                 
             </div>
             <div *ngIf="showMe">
-                <form method="post" onsubmit="event.preventDefault()" >
+                 <!--#bookForm="ngForm" (ngSubmit)="booking(bookForm)"-->
+                <form method="POST">
                     <table class="table mx-3" border=1>
                         <thead>
                             <tr>
@@ -115,8 +116,8 @@
                               <th scope="col">Price</th>
                               <th scope="col">Duration </th>
                               <th scope="col">AirLine</th>
-                              <th scope="col">Departure Time</th>
-                              <th scope="col">Arrival Time</th>
+                              <th scope="col">Departure<br> Time</th>
+                              <th scope="col">Arrival<br>Time</th>
                               
                              
                               <th></th>
@@ -146,26 +147,43 @@
             <input type="text" readonly name="source"
             value={{flights[0]}}
         /> -->
-                         <td id="source" name="source">
-                                {{flights[0]}}
-                            </td>
-                            <td>
-                                {{flights[1]}}
-                            </td>
-                            <td>
-                                {{flights[2]}}
-                            </td>
-                            <td>
-                                {{flights[3]}}
-                            </td>
-                            <td>
-                                {{flights[4]}}
-                            </td>
-                            <td>
-                                {{flights[5]}}
-                            </td>
-                                <button class="btn btn-success" (click)="bookFlight()">book</button>
-                            
+                         <td  ><input style="width:93px" type="text" name="Departure" id="Departure"
+                            value="{{flights[0]}}"
+                        /></td>
+                        <td >
+                            <input style="width:93px" type="text" name="Arrival" id="Arrival"
+                            value="{{flights[1]}}"
+                            />
+                        </td>
+                        <td>
+                            <input style="width:73px" type="text" name="Price" id="Price"
+                            value="{{flights[2]}}"
+                        />
+                        </td>
+                        <td>
+                            <input style="width:83px" type="text" name="Duration" id="Duration"
+                            value="{{flights[3]}}"
+                        />
+                        </td>
+                        <td>
+                            <input style="width:78px" type="text" name="AirLine" id="AirLine"
+                            value="{{flights[4]}}"
+                        />
+                        </td>
+                        <td>
+                            <input style="width:73px" type="text" name="DepartureTime" id="DepartureTime"
+                        value="{{flights[5]}}"
+                        />
+                        </td>
+                        <td>
+                            <input style="width:73px" type="text" name="ArrivalTime" id="ArrivalTime"
+                        value="{{flights[6]}}"
+                        />
+                        </td>
+                        <td>
+                            <button class="btn btn-success" type="submit" (click)="booking()">book</button> 
+                        </td>
+                           
                         </tr>
                         
                         

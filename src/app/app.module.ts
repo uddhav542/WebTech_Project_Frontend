@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { AndamanDestComponent } from './andaman-dest/andaman-dest.component';
 import { JaipurDestComponent } from './jaipur-dest/jaipur-dest.component';
 import { SignupComponent } from './signup/signup.component';
+import { MybookingComponent } from './mybooking/mybooking.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,15 @@ import { SignupComponent } from './signup/signup.component';
     BookingComponent,
     AndamanDestComponent,
     JaipurDestComponent,
-    SignupComponent
+    SignupComponent,
+    MybookingComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
