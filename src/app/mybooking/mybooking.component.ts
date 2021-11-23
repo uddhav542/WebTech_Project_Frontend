@@ -22,6 +22,7 @@ export class MybookingComponent implements OnInit {
   ngOnInit(): void {
     this.getbookings().subscribe((res:any) => {
       this.books = res as bookings[];
+      
       //console.log(res);
 
       for (var index1 in res) {

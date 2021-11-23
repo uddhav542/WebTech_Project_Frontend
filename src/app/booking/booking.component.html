@@ -9,9 +9,6 @@
 </head>
 <body>
     <div class="banner-area">
-
-        
-
         <div class="title-area">
             <p class="subtitle">BOOK  <br>
                     YOUR <br>
@@ -26,48 +23,7 @@
             <div id="booking-form-box">
                 <div id="subtitle-area"><p id="textarea">Search your Flight</p>
                 </div><br><br><br>
-                
-<!--             
-                        <form method="post" onsubmit="event.preventDefault() && getData()" >
-                         <div class="row"> 
-                                <div class="c2">
-                                    <select name="category" aria-placeholder="Traveller&Class" id="input-box">
-                                        <option value="" disabled selected hidden>Source</option>
-                                        <option value="kerala">kerala</option>
-                                        <option value="Ladakh">Ladakh</option>
-                                        <option value="Andaman">Andaman</option>
-                                        <option value="Jaipur">Jaipur</option>
-                                    </select>
-                                </div>
-                                <div class="c2">
-                                    <select name="category" aria-placeholder="Traveller&Class" id="input-box1">
-                                        <option value="" disabled selected hidden>Destination</option>
-                                        <option value="kerala">kerala</option>
-                                        <option value="Ladakh">Ladakh</option>
-                                        <option value="Andaman">Andaman</option>
-                                        <option value="Jaipur">Jaipur</option>
-                                    </select>
-                                </div>
-                             </div> 
-                
-                            <div class="row">
-                                
-                                
-                            </div>
-                            <div class="row">
-                                <div class="c2">
-                                    <select name="category" aria-placeholder="Traveller&Class" id="input-box">
-                                        <option value="" disabled selected hidden>Class</option>
-                                        <option value="First">Business</option>
-                                        <option value="Elite">Elite</option>
-                                    </select>
-                                </div>
-                                <div class="c2">
-                                    <input  id="input-box1" (click)="getData()" type="submit" name="Search" value="Search"/>
-                                    
-                                </div>
-                            </div>
-                        </form> -->
+
                         
                         <form  method="get" onsubmit="event.preventDefault()" >
                             <div class="row">
@@ -91,24 +47,18 @@
                               </div>
                             </div>
                             <div class="row">
-                                <!-- <div class="col">
-                                    <select name="category" aria-placeholder="Traveller&Class" id="input-box">
-                                        <option value="" disabled selected hidden>Class</option>
-                                        <option value="First">Business</option>
-                                        <option value="Elite">Elite</option>
-                                    </select> 
-                                </div> -->
+                            
                                 <div class="col-md-9 text-center">
-                                    <input  id="input-box2" (click)="getData()" type="submit" name="Search" value="Search"/>
+                                    <input class="btn btn-success" id="input-box2" (click)="getData()" type="submit" name="Search" value="Search"/>
                                 </div>
                             </div>
                           </form>
                 
             </div>
-            <div *ngIf="showMe">
-                 <!--#bookForm="ngForm" (ngSubmit)="booking(bookForm)"-->
+            <div *ngIf="showMe" >
+                 
                 <form method="POST">
-                    <table class="table mx-3" border=1>
+                    <table class="table mytable" border=1 style="border:1px solid black;">
                         <thead>
                             <tr>
                             <th scope="col">Departure</th>
@@ -123,60 +73,39 @@
                               <th></th>
                             </tr>
                           </thead>
-                        <!-- <td *ngFor="let s of flights">
-                            
-                            {{s}}
-                            
-                        </td> -->
+                       
                         <tr>
-                            <!-- <input type="text" readonly id="source" name="source"
-                                value={{flights[0]}}
-                            />
-                            <input type="text" readonly  name="source"
-                            value={{flights[0]}}
-                        />
-                        <input type="text" readonly  name="source"
-                        value={{flights[0]}}
-                    />
-                    <input type="text" readonly  name="source"
-                    value={{flights[0]}}
-                />
-                <input type="text" readonly  name="source"
-                value={{flights[0]}}
-            />
-            <input type="text" readonly name="source"
-            value={{flights[0]}}
-        /> -->
-                         <td  ><input style="width:93px" type="text" name="Departure" id="Departure"
+                            
+                         <td  ><input style="width:93px; border:none" type="text" name="Departure" id="Departure" readonly
                             value="{{flights[0]}}"
                         /></td>
                         <td >
-                            <input style="width:93px" type="text" name="Arrival" id="Arrival"
+                            <input style="width:93px; border:none" type="text" name="Arrival" id="Arrival" readonly
                             value="{{flights[1]}}"
                             />
                         </td>
                         <td>
-                            <input style="width:73px" type="text" name="Price" id="Price"
+                            <input style="width:73px; border:none" type="text" name="Price" id="Price" readonly
                             value="{{flights[2]}}"
                         />
                         </td>
                         <td>
-                            <input style="width:83px" type="text" name="Duration" id="Duration"
+                            <input style="width:88px; border:none" type="text" name="Duration" id="Duration" readonly
                             value="{{flights[3]}}"
                         />
                         </td>
                         <td>
-                            <input style="width:78px" type="text" name="AirLine" id="AirLine"
+                            <input style="width:88px; border:none" type="text" name="AirLine" id="AirLine" readonly
                             value="{{flights[4]}}"
                         />
                         </td>
                         <td>
-                            <input style="width:73px" type="text" name="DepartureTime" id="DepartureTime"
+                            <input style="width:73px; border:none" type="text" name="DepartureTime" id="DepartureTime" readonly
                         value="{{flights[5]}}"
                         />
                         </td>
                         <td>
-                            <input style="width:73px" type="text" name="ArrivalTime" id="ArrivalTime"
+                            <input style="width:73px; border:none" type="text" name="ArrivalTime" id="ArrivalTime" readonly
                         value="{{flights[6]}}"
                         />
                         </td>
