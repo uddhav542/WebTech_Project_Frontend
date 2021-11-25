@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {bookings} from '../shared/flight.model';
-import { NgForm } from '@angular/forms';
+import { EmailValidator, NgForm } from '@angular/forms';
+import { SessionService } from '../session.service';
+import { Router } from '@angular/router';
 
 let flights:any;
 declare var M: any;
@@ -22,11 +24,17 @@ export class BookingComponent implements OnInit {
   selectedFl!: bookings;
 
   showMe:boolean=false;
-  constructor(public http: HttpClient) {
+  constructor(
+    public http: HttpClient,
+    public session:SessionService,
+    public router:Router
+    ) {
 
    }
 
   ngOnInit(): void {
+    // let email=this.session.get();
+    // console.log(email);
    
   }
   getData()
@@ -59,6 +67,8 @@ export class BookingComponent implements OnInit {
   }
   booking()
   {
+    let email=this.session.get();
+    console.log(email);
     let source= (document.getElementById("Departure") as HTMLSelectElement).value
     let dest= (document.getElementById("Arrival") as HTMLSelectElement).value
     let price= (document.getElementById("Price") as HTMLSelectElement).value
@@ -68,6 +78,7 @@ export class BookingComponent implements OnInit {
     let atime= (document.getElementById("ArrivalTime") as HTMLSelectElement).value
 
     let book=({
+      Email:email,
       Departure:source,
       Arrival:dest,
       Price:price,
@@ -79,6 +90,8 @@ export class BookingComponent implements OnInit {
   });
     this.bookFlight(book).subscribe((res) => {
           alert("Your Flight is booked Successfully.");
+          this.router.navigate(['/mybookings']);
+          // this.session.removeUser();
     //   ///this.resetForm(form);
     //   //this.refreshEmployeeList();
     //  // M.toast({ html: 'Flight Booked successfully', classes: 'rounded' });

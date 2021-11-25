@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { User } from '../shared/user.model';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { SessionService } from '../session.service';
 
 @Component({
   selector: 'app-login',
@@ -16,9 +17,14 @@ export class LoginComponent implements OnInit {
   readonly baseURL = 'http://localhost:3000/api/login';
   postId:any;
   getId:any;
-  constructor(public http:HttpClient, public router:Router) { }
+  constructor(
+    public http:HttpClient, 
+    public router:Router,
+    public session:SessionService
+  ) { }
 
   ngOnInit(): void {
+
   }
   // logindata()
   // {
@@ -60,9 +66,11 @@ export class LoginComponent implements OnInit {
   }
   loginuser()
   {
+    
     let email= (document.getElementById("exampleInputEmail1") as HTMLSelectElement).value
     let password= (document.getElementById("exampleInputPassword1") as HTMLSelectElement).value
     let user=({
+     
       email:email,
       password:password,
    });
@@ -77,6 +85,8 @@ export class LoginComponent implements OnInit {
         if(s==si && p==pi)
         {
           console.log("Success");
+          this.session.save(s);
+          alert("Login Successful");
           this.router.navigate(['/home']);
         }
         else{

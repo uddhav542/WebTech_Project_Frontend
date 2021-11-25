@@ -1,0 +1,162 @@
+@font-face {
+    font-family: pertibd;
+    src: url(../Fonts/pertibd.ttf);
+  }
+  @font-face {
+    font-family: Philosopher-Regular;
+    src: url(../Fonts/Philosopher/Philosopher-Regular.ttf);
+  }
+  
+  .topheadercontainer {
+    height: 100px;
+    width: 1200px;
+    margin-left: 150px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    /*  background-color: grey; */
+  }
+  
+  .leftheader {
+    position: absolute;
+    font-family: pertibd;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  #H1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #H2 {
+    font-family: Philosopher-Regular;
+    font-size: 14px;
+    margin: -20px;
+    margin-left: 1.5px;
+  }
+  
+  .wrapper {
+    height: 50px;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 280px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #f5f5f5;
+  }
+  
+  .wrapperchild {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #H3 {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: Philosopher-Regular;
+    color: #3e4152;
+    font-size: 20px;
+  }
+  
+  .btn {
+    height: 38px;
+    width: 98px;
+    margin-top: 6px;
+    margin-right: 20px;
+    font-family: pertibd;
+    font-size: 12px;
+    color: #7ce3ce;
+    margin-left: 120px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 2px solid;
+    border-color: #14cda8;
+  }
+  #btnlink {
+    text-decoration: none;
+    color: #14cda8;
+  }
+  
+  .btn:hover {
+    background-color: #7ce3ce65;
+  }
+  
+  .QTitle {
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+  
+  #H4 {
+    font-family: Philosopher-Regular;
+    font-size: 18px;
+  }
+  
+  .postallink {
+    margin-left: 150px;
+    margin-top: 280px;
+  }
+  
+  #H5 {
+    font-family: Philosopher-Regular;
+    font-size: 15px;
+  }
+  
+  #H5a {
+    color: #b393d4;
+    text-decoration: none;
+  }
+  
+  .faq {
+    margin-top: 60px;
+    margin-left: 150px;
+  }
+  
+  #H6 {
+    font-family: Philosopher-Regular;
+    font-size: 15px;
+  }
+  
+  #H6a {
+    text-decoration: none;
+  }
+  
+  /* .next-btn {
+    margin-left: 360px;
+    margin-top: -30px;
+  }
+   */
+  
+  .faq:active {
+    color: #14cda8;
+  }
+  
+  .booking-query {
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  
+  #H7 {
+    font-family: Philosopher-Regular;
+    font-size: 15px;
+  }
+  
+  #H7a {
+    text-decoration: none;
+  }
+  
+  .about-safar {
+    margin-left: 150px;
+  }
+  
+  #H8 {
+    font-family: Philosopher-Regular;
+    font-size: 15px;
+  }
+  
+  #H8a {
+    text-decoration: none;
+  }
+  

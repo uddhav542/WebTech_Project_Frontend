@@ -13,7 +13,7 @@
                     <tr>
                     <th scope="col">Departure</th>
                       <th scope="col">Arrival</th>
-                      <th scope="col">Price</th>
+                      <th scope="col">Fare</th>
                       <th scope="col">Duration </th>
                       <th scope="col">AirLine</th>
                       <th scope="col">Departure<br> Time</th>
@@ -23,7 +23,7 @@
                       <th></th>
                     </tr>
                   </thead>
-                  <tr *ngFor="let notes of bookedflights">
+                  <tr *ngFor="let notes of bookedflights[0]">
                     <td>{{notes.Departure}}</td>
                     <td>{{notes.Arrival}}</td>
                     <td>{{notes.Price}}</td>

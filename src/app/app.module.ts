@@ -22,6 +22,9 @@ import { AndamanDestComponent } from './andaman-dest/andaman-dest.component';
 import { JaipurDestComponent } from './jaipur-dest/jaipur-dest.component';
 import { SignupComponent } from './signup/signup.component';
 import { MybookingComponent } from './mybooking/mybooking.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { MybookingComponent } from './mybooking/mybooking.component';
     JaipurDestComponent,
     SignupComponent,
     MybookingComponent,
+    FooterComponent,
+    ProfileComponent,
+    LogoutComponent,
 
   ],
   imports: [

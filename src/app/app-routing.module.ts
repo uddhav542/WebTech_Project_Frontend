@@ -16,6 +16,8 @@ import { AndamanDestComponent } from './andaman-dest/andaman-dest.component';
 import { JaipurDestComponent } from './jaipur-dest/jaipur-dest.component';
 import { SignupComponent } from './signup/signup.component';
 import { MybookingComponent } from './mybooking/mybooking.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {
@@ -40,7 +42,7 @@ const routes: Routes = [
     path:'flights',component:FlightsComponent
   },
   {
-    path:'destination',component:DestinationComponent
+    path:'home/destination',component:DestinationComponent
   },
   {
     path:'aboutus',component:AboutusComponent
@@ -65,6 +67,12 @@ const routes: Routes = [
   },
   {
     path:'mybookings',component:MybookingComponent
+  },
+  {
+    path:'profile',component:ProfileComponent
+  },
+  {
+    path:'logout',component:LogoutComponent
   }
 ];
 

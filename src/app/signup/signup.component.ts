@@ -24,10 +24,12 @@ export class SignupComponent implements OnInit {
   }
   useraddition()
   {
+    let username=(document.getElementById("username1") as HTMLSelectElement).value
     let email= (document.getElementById("exampleInputEmail1") as HTMLSelectElement).value
     let password= (document.getElementById("exampleInputPassword1") as HTMLSelectElement).value
     console.log(email+""+password);
     let user=({
+     
       email:email,
       password:password,
    });
@@ -38,9 +40,11 @@ export class SignupComponent implements OnInit {
   }
   registeruser()
   {
+    
     let email= (document.getElementById("exampleInputEmail1") as HTMLSelectElement).value
     let password= (document.getElementById("exampleInputPassword1") as HTMLSelectElement).value
     let user=({
+      
       email:email,
       password:password,
    });

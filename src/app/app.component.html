@@ -6,95 +6,55 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<!-- Including the bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
-
-         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark text-light">
-            <a class="navbar-brand">Safar<br>A Journey</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                  <a class="nav-link" routerLink='/home'>Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink='/bookingpage'>Flights</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" routerLink='/contactus'>ContactUs</a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" routerLink='/aboutus'>About Safar</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink='/mybookings'>My Bookings</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" routerLink='/login'>Login</a>
-                </li>
-              </ul>
-            </div>
-          </nav>  
-          
-         
-          <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" routerLink='/home'>Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" routerLink='/booking'>Booking</a>
-                <a class="nav-item nav-link" routerLink='/contactus'>ContactUs</a>
-                <a class="nav-item nav-link" routerLink='aboutus'>Disabled</a>
-              </div>
-            </div>
-          </nav>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-         -->
-         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<header class="header">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark text-light">
+    <a class="navbar-brand">Safar<br>A Journey</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
         
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav> -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/home'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/bookingpage'>Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/contactus'>ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/aboutus'>About Safar</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink='/mybookings'>My Bookings</a>
+        </li> -->
+        <li style="margin-left: 750px;" class="nav-item">
+          <a class="nav-link" routerLink='/login'><i class="fa fa-sign-in"></i><span class="mx-2">login</span></a>
+        </li>
+        <li style="float:right" class="nav-item">
+          <a class="nav-link" routerLink='/profile'><i class="fa fa-users"></i><span class="mx-2">My Profile</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+  
+</header>
+         
+         
+          
+        <router-outlet>
+          
+        </router-outlet>
+       
+     
 </body>
-<router-outlet></router-outlet>
+
 </html>
+<!-- <app-footer></app-footer> -->
 
