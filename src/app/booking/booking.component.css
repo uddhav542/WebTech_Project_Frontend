@@ -1,11 +1,11 @@
-
+/* 
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   body{
-    /* overflow: auto; */
+  
   }
   .Nav-Bar{
     color:rgba(48, 8, 8, 0.767);
@@ -14,8 +14,7 @@
   .banner-area {
     width: 100vw;
     height: 100vh;
-    /* background:rgb(212, 218, 247); */
-    /* float:right; */
+   
     background-size:cover;
     position: relative;
     color: rgba(0, 0, 0, 0.822);
@@ -141,7 +140,7 @@
   }
   
   .Ladakh {
-    /* background: rgba(255, 255, 255, 0.3); */
+   
     border-radius: 12px;
     height: 380px;
     width: 245px;
@@ -211,7 +210,7 @@
     position: absolute;
     top: 390px;
     left: 0px;
-    /* background:rgb(212, 218, 247); */
+    
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -269,7 +268,7 @@ select {
 }
 
 .btn {
-  background-color: #ec8a1a; /* Green */
+ 
   border: 1px solid #86f508;
   border-radius: 4px;
   color: white;
@@ -319,7 +318,7 @@ select {
 }
 
 .image{
-  /* position: fixed; */
+  
   width: 100vw;
   height:100vh;
   float: right;
@@ -340,4 +339,107 @@ select {
 }
 .mytable th td {
 border:3px solid black;
+} */
+
+@font-face {
+  font-family: pertibd;
+  src: url(../Fonts/pertibd.ttf);
+}
+@font-face {
+  font-family: Philosopher-Regular;
+  src: url(../Fonts/Philosopher/Philosopher-Regular.ttf);
+}
+
+.header-text {
+  margin-top: 87px;
+  margin-left: 30px;
+}
+
+.hi-user {
+  font-family: Philosopher-Regular;
+  font-size: 36px;
+  padding-bottom: 5px;
+  display: inline-flex;
+}
+
+.text-area {
+  font-family: pertibd;
+  font-size: 46px;
+}
+
+.input-wrapper {
+  height: 80px;
+  width: 1055px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid;
+  box-shadow: 2px 2px 4px #00000052;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 220px;
+  margin-top: 135px;
+  /* position: fixed; */
+}
+
+.submit-button {
+  width: 347px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  font-family: Philosopher-Regular;
+  font-size: 19px;
+}
+
+.submit-link {
+  text-decoration: none;
+  display: block;
+}
+
+.submit-link :visited,
+.submit-link:link {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  height: 40px;
+  width: 340px;
+  border: none;
+  text-align: center;
+  font-family: Philosopher-Regular;
+  font-size: 19px;
+}
+
+input :active {
+  border: none;
+}
+
+.image-background {
+  width: 100%;
+  height: 575px;
+  background: url(../Images/data.jpg); 
+  background-size: cover; 
+  position:relative;
+}
+
+/* .submit-button:hover {
+  background-color: #387222;
+} */
+/* .body-class{
+
+}
+
+.getdata{
+  
+} */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  height: 45px;
+  width: 220px;
 }

@@ -24,6 +24,14 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    let stat=this.session.get()
+    if(stat==null){
+
+    }
+    else{
+      alert('You Are Already Logged In.');
+      this.router.navigate(['/profile']);
+    }
 
   }
   // logindata()

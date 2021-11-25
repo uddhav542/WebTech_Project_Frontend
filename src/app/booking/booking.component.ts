@@ -68,7 +68,13 @@ export class BookingComponent implements OnInit {
   booking()
   {
     let email=this.session.get();
-    console.log(email);
+    if(email==null)
+    {
+      alert('Please Login to your Account');
+      this.router.navigate(['/login']);
+    }
+    else{
+      console.log(email);
     let source= (document.getElementById("Departure") as HTMLSelectElement).value
     let dest= (document.getElementById("Arrival") as HTMLSelectElement).value
     let price= (document.getElementById("Price") as HTMLSelectElement).value
@@ -96,6 +102,9 @@ export class BookingComponent implements OnInit {
     //   //this.refreshEmployeeList();
     //  // M.toast({ html: 'Flight Booked successfully', classes: 'rounded' });
      });
+      
+    }
+    
 
   }
   

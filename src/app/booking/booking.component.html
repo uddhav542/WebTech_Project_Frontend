@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,4 +129,119 @@
 
 </body>
 </html>
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="flights.css"> -->
+</head>
+<body>
+    <div class="body-class">
+        <div class="image-background">
+
+            <div class="header-text"> 
     
+                <div class="hi-user">
+                    Hey, User
+                    
+                </div>
+             
+                <div class="text-area">
+                    Let's Find the best Flight <br> 
+                     for you and your <br>
+                     destination !
+        
+                </div>
+        
+            </div>
+            
+            
+            
+            
+            <div class="input-wrapper">
+    
+                <div class="inputs">
+                    
+                    <input type="text" placeholder="Where are you flying from?" id="input-box"> |
+                    <input class="landing" type="text" placeholder="Where are you landing?" id="input-box1"> |
+                </div>
+                <button class="submit-button"> <a class="submit-link"  (click)="getData()">Submit</a></button>
+            </div>
+    
+        </div>
+        <div class="getdata" *ngIf="showMe" >
+                     
+            <form method="POST">
+                <table class="table mytable" border=1 style="border:1px solid black;">
+                    <thead>
+                        <tr>
+                        <th scope="col">Departure</th>
+                          <th scope="col">Arrival</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Duration </th>
+                          <th scope="col">AirLine</th>
+                          <th scope="col">Departure<br> Time</th>
+                          <th scope="col">Arrival<br>Time</th>
+                          <th scope="col">Book from here</th>
+                         
+                          <th></th>
+                        </tr>
+                      </thead>
+                   
+                    <tr>
+                        
+                     <td  ><input style="width:93px; border:none" type="text" name="Departure" id="Departure" readonly
+                        value="{{flights[0]}}"
+                    /></td>
+                    <td >
+                        <input style="width:93px; border:none" type="text" name="Arrival" id="Arrival" readonly
+                        value="{{flights[1]}}"
+                        />
+                    </td>
+                    <td>
+                        <input style="width:73px; border:none" type="text" name="Price" id="Price" readonly
+                        value="{{flights[2]}}"
+                    />
+                    </td>
+                    <td>
+                        <input style="width:88px; border:none" type="text" name="Duration" id="Duration" readonly
+                        value="{{flights[3]}}"
+                    />
+                    </td>
+                    <td>
+                        <input style="width:88px; border:none" type="text" name="AirLine" id="AirLine" readonly
+                        value="{{flights[4]}}"
+                    />
+                    </td>
+                    <td>
+                        <input style="width:73px; border:none" type="text" name="DepartureTime" id="DepartureTime" readonly
+                    value="{{flights[5]}}"
+                    />
+                    </td>
+                    <td>
+                        <input style="width:73px; border:none" type="text" name="ArrivalTime" id="ArrivalTime" readonly
+                    value="{{flights[6]}}"
+                    />
+                    </td>
+                    <td>
+                        <button class="btn btn-success" style="width: 100px;"  type="submit" (click)="booking()">book</button> 
+                    </td>
+                       
+                    </tr>
+                    
+                    
+                </table>
+            </form>
+        
+        </div>
+    
+    </div>
+    
+        
+</body>
+</html>
